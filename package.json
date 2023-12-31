@@ -1,0 +1,49 @@
+{
+  "name": "sembrar",
+  "version": "1.0.0",
+  "description": "capstone project",
+  "main": "index.js",
+  "scripts": {
+    "frontend:start": "react-scripts start",
+    "frontend:build": "react-scripts build",
+    "seed:dev": "nodemon ./db/seed.js",
+    "seed:db": "node ./db/seed.js",
+    "db:dev": "nodemon index.js",
+    "db:start": "node index.js",
+    "deploy": "concurrently \"react-scripts start\" \"node index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bootstrap": "^5.2.3",
+    "chalk": "^4.1.2",
+    "concurrently": "^8.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "pg": "^8.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
+    "react-router": "^6.10.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
